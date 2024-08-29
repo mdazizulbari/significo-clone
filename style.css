@@ -1,50 +1,50 @@
-:root{
-    --cyan: #AEDEE0;
-    --darkCyan: #003535;
-    --salmon: #EF9D71;
-    --darkSalmon: #422B1F;
+:root {
+  --cyan: #aedee0;
+  --darkCyan: #003535;
+  --salmon: #ef9d71;
+  --darkSalmon: #422b1f;
 }
-*{
-    font-weight: 600;
+* {
+  font-weight: 600;
 }
-*::selection{
-    background-color: var(--salmon);
-}
-
-body{
-    transition: background-color ease-out 0.8s;
+*::selection {
+  background-color: var(--salmon);
 }
 
-.videoDiv{
-    clip-path: circle(var(--clip) at 50% 50%);
+body {
+  transition: background-color ease-out 0.8s;
 }
 
-body[theme="black"]{
-    background-color: black;
-}
-body[theme="black"] .section{
-    color: white;
+.videoDiv {
+  clip-path: circle(var(--clip) at 50% 50%);
 }
 
-body[theme="cyan"]{
-    background-color: var(--cyan);
+body[theme="black"] {
+  background-color: black;
 }
-body[theme="cyan"] .section{
-    color: var(--darkCyan);
+body[theme="black"] .section {
+  color: white;
 }
 
-body[theme="salmon"]{
-    background-color: var(--salmon);
+body[theme="cyan"] {
+  background-color: var(--cyan);
 }
-body[theme="salmon"] .section{
-    color: var(--darkSalmon);
-}   
+body[theme="cyan"] .section {
+  color: var(--darkCyan);
+}
 
-body[theme="white"]{
-    background-color: white;
+body[theme="salmon"] {
+  background-color: var(--salmon);
 }
-body[theme="white"] .section{
-    color: black;
+body[theme="salmon"] .section {
+  color: var(--darkSalmon);
+}
+
+body[theme="white"] {
+  background-color: white;
+}
+body[theme="white"] .section {
+  color: black;
 }
 
 @tailwind base;
@@ -53,19 +53,20 @@ body[theme="white"] .section{
 
 @layer base {
   @font-face {
-    font-family: 'special';
+    font-family: "special";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/05.level-3/significo.com/assects/spcial.woff) format('woff2');
+    src: url(/05.level-3/significo.com/assects/spcial.woff) format("woff2");
   }
 }
 @layer base {
   @font-face {
-    font-family: 'special-light';
+    font-family: "special-light";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/05.level-3/significo.com/assects/spcial-light.woff) format('woff2');
+    src: url(/05.level-3/significo.com/assects/spcial-light.woff)
+      format("woff2");
   }
 }
