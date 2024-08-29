@@ -1,0 +1,71 @@
+:root{
+    --cyan: #AEDEE0;
+    --darkCyan: #003535;
+    --salmon: #EF9D71;
+    --darkSalmon: #422B1F;
+}
+*{
+    font-weight: 600;
+}
+*::selection{
+    background-color: var(--salmon);
+}
+
+body{
+    transition: background-color ease-out 0.8s;
+}
+
+.videoDiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+body[theme="black"]{
+    background-color: black;
+}
+body[theme="black"] .section{
+    color: white;
+}
+
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+body[theme="cyan"] .section{
+    color: var(--darkCyan);
+}
+
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+body[theme="salmon"] .section{
+    color: var(--darkSalmon);
+}   
+
+body[theme="white"]{
+    background-color: white;
+}
+body[theme="white"] .section{
+    color: black;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'special';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/05.level-3/significo.com/assects/spcial.woff) format('woff2');
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'special-light';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/05.level-3/significo.com/assects/spcial-light.woff) format('woff2');
+  }
+}
