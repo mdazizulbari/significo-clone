@@ -57,7 +57,7 @@ body[theme="white"] .section {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/05.level-3/significo.com/assects/spcial.woff) format("woff2");
+    src: url(./assects/spcial.woff) format("woff2");
   }
 }
 @layer base {
@@ -66,7 +66,7 @@ body[theme="white"] .section {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/05.level-3/significo.com/assects/spcial-light.woff)
+    src: url(./assects/spcial-light.woff)
       format("woff2");
   }
 }
